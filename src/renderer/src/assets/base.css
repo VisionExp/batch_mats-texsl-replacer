@@ -1,0 +1,276 @@
+:root {
+  --ev-c-white: #ffffff;
+  --ev-c-white-soft: #f8f8f8;
+  --ev-c-white-mute: #f2f2f2;
+  --color-accent: #FFB422;
+  --ev-c-black: #1b1b1f;
+  --ev-c-black-soft: #222222;
+  --ev-c-black-mute: #282828;
+
+  --ev-c-gray-1: #515c67;
+  --ev-c-gray-2: #414853;
+  --ev-c-gray-3: #32363f;
+
+  --ev-c-text-1: rgba(255, 255, 245, 0.86);
+  --ev-c-text-2: rgba(235, 235, 245, 0.6);
+  --ev-c-text-3: rgba(235, 235, 245, 0.38);
+
+  --ev-button-alt-border: transparent;
+  --ev-button-alt-text: var(--ev-c-text-1);
+  --ev-button-alt-bg: var(--ev-c-gray-3);
+  --ev-button-alt-hover-border: transparent;
+  --ev-button-alt-hover-text: var(--ev-c-text-1);
+  --ev-button-alt-hover-bg: var(--ev-c-gray-2);
+}
+
+:root {
+  --color-background: var(--ev-c-black);
+  --color-background-soft: var(--ev-c-black-soft);
+  --color-background-mute: var(--ev-c-black-mute);
+  --color-border-dark: var(--ev-c-gray-3);
+  --color-text: var(--ev-c-text-1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: Inter,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto,
+  Oxygen,
+  Ubuntu,
+  Cantarell,
+  'Fira Sans',
+  'Droid Sans',
+  'Helvetica Neue',
+  sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: #232323;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333438;
+  border-radius: 10px;
+  width: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  width: 5px;
+  background-color: #6b6c70;
+}
+
+*::-webkit-scrollbar-track {
+  margin: 2px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px #333;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #6b6c70;
+}
+
+/* Delete scrollbar buttons */
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+canvas {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+canvas:focus-visible {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap {
+  gap: 0.25rem;
+}
+
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.px {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pr {
+  padding-right: 0.5rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pl {
+  padding-left: 0.5rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.px-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-1x5 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.my {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.undeline {
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.text-muted {
+  color: var(--ev-c-gray-1);
+}
+
+.text-sm {
+  font-size: 0.85rem;
+}
+
+.text-base {
+  font-size: 1.0rem;
+}
+
+.text-md {
+  font-size: 1.25rem;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(162deg, #1f89db, #f42a8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-r {
+  border-right: 1px solid var(--color-border-dark);
+}
